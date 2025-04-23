@@ -20,12 +20,19 @@
   display: flex;
   justify-content: space-around;
 }
+.context{
+  display: flex;
+  width: 80%;
+}
 
 .main {
   height: 80vh;
-  width: 80%;
   background-color: aquamarine;
+  width: 80%;
 
+}
+aside{
+  padding-left:20px ;
 }
 
 .footer {

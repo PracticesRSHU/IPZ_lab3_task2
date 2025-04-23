@@ -1,24 +1,13 @@
 // import userImg from "../images/user.png"; //using in VS
-const userDefault = {
-    id: 0,
-    name: "Olga",
-    city: "Lviv",
-    position: "student",
-    avatar: "https://cdn-icons-png.flaticon.com/512/9131/9131529.png",
-  };
-  
-  function UserCard({
+
+function UserCard({
     id = 0,
     name = "Olga",
     city = "Lviv",
     position = "Student",
     avatar = "https://cdn-icons-png.flaticon.com/512/9131/9131529.png",
   }) {
-    console.log(userDefault);
-    // console.log(name);
-    // console.log(city);
-    console.log(avatar);
-    // avatar = userImage;
+    
     let cardStyle = {
       color: "white",
       fontSize: "18px",
@@ -43,6 +32,6 @@ const userDefault = {
     );
   }
   
-  export default UserCard;
+export default UserCard;
   
   
