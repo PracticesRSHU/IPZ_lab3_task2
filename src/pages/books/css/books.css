@@ -1,0 +1,21 @@
+
+.books {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.book-tables {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.book-tables th,
+.book-tables td
+{
+    border: 1px solid blue;
+    padding: 8px;
+}
+
+

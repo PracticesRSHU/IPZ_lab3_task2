@@ -13,6 +13,7 @@ import UserDetail from './pages/users/UserDetail';
 import BooksLayout from './pages/books/BooksLayout';
 import BooksList from './pages/books/BooksList';
 import Book from './pages/books/Book';
+import NewBook from './pages/books/NewBook';
 
 function App() {
 
@@ -40,6 +41,13 @@ function App() {
     },
   ];
 
+  const booksArrays=[
+    {id:1, title: "Harry Potter", pages:765, pathImg: "https://images.booksense.com/images/535/716/9781338716535.jpg"},
+    {id:2, title: "Кобзар", pages:365, pathImg: "https://images.booksense.com/images/535/716/9781338716535.jpg"},
+    {id:3, title: "React Native", pages:578, pathImg: "https://images.booksense.com/images/535/716/9781338716535.jpg"},
+    ]
+    let [books, setBooks]=useState(booksArrays);
+
   // const [users, setUsers]=useState(USERS);
 
   return (
@@ -63,10 +71,10 @@ function App() {
                   <Route path=":id" element={<UserDetail users={USERS} />} />
                   {/* <Route path="new" element={<UserNew users={USERS} />} /> */}
                 </Route>
-                <Route path="/books" element={<BooksLayout/>}>
+                <Route path="/books" element={<BooksLayout books={books} setBooks={setBooks}  />}>
                   <Route index element={<BooksList />} />
                   <Route path=":id" element={<Book/>} />
-                  
+                  <Route path="new" element={<NewBook/>}/>
                 </Route>
                 <Route path="/*" element={<NotFound />} />
               </Routes>

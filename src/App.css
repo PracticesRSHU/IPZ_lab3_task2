@@ -29,6 +29,7 @@
   height: 80vh;
   background-color: aquamarine;
   width: 80%;
+  overflow-y: auto;
 
 }
 aside{
