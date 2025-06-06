@@ -14,6 +14,8 @@ import BooksLayout from './pages/books/BooksLayout';
 import BooksList from './pages/books/BooksList';
 import Book from './pages/books/Book';
 import NewBook from './pages/books/NewBook';
+import EditBook from './pages/books/EditBook';
+import UserLogin from './pages/users/UserLogin';
 
 function App() {
 
@@ -75,7 +77,9 @@ function App() {
                   <Route index element={<BooksList />} />
                   <Route path=":id" element={<Book/>} />
                   <Route path="new" element={<NewBook/>}/>
+                  <Route path="edit/:id" element={<EditBook/>}/>
                 </Route>
+                <Route path="login" element={<UserLogin/>}/>
                 <Route path="/*" element={<NotFound />} />
               </Routes>
             </main>

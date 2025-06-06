@@ -12,17 +12,17 @@ const NewBook = () => {
 
     // ==============1. Using onChange event
 
-    const titleChange = (event) => {
-        console.log(event.target);
-        console.dir(event.target.value);
-        newBook.title = event.target.value;
-    }
+    // const titleChange = (event) => {
+    //     console.log(event.target);
+    //     console.dir(event.target.value);
+    //     newBook.title = event.target.value;
+    // }
 
-    const pagesChange = (event) => {
-        console.log(event.target);
-        console.dir(event.target.value);
-        newBook.pages = event.target.value;
-    }
+    // const pagesChange = (event) => {
+    //     console.log(event.target);
+    //     console.dir(event.target.value);
+    //     newBook.pages = event.target.value;
+    // }
     // і т.д.
     // const handleSubmit=(event)=>{
     //     // скасування реакції оброблювача за замовчуванням
@@ -34,7 +34,7 @@ const NewBook = () => {
     //     setBooks([...books,newBook]);
     //     navigate("/books");
     // }
-    
+
     // ================ 2. ref binding to input==
     let titleRef = useRef("Noname");
     let pagesRef = useRef(0);

@@ -22,6 +22,7 @@ const BooksList = () => {
                         <th>image</th>
                         <th>title</th>
                         <th>pages</th>
+                        <th>edit</th>
                         <th>delete</th>
                     </tr>
                 </thead>
@@ -33,6 +34,7 @@ const BooksList = () => {
                                 <td><img width="50px" src={b.pathImg} alt="" /></td>
                                 <td><Link to={`/books/${b.id}`}>{b.title}</Link></td>
                                 <td>{b.pages}</td>
+                                <td><Link to={`/books/edit/${b.id}`}>Edit</Link></td>
                                 <td><button onClick={()=>removeBook(b.id)}>Delete</button></td>
                             </tr>
                         ))
